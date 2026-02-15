@@ -5,9 +5,9 @@ set -euo pipefail
 # NoLoops Daemon Installer
 # =============================================================================
 
-VERSION="0.1.0"
+VERSION="0.1.1"
 API_BASE_URL="https://api.noloops.io"
-DEB_DOWNLOAD_URL="https://github.com/jedsada-n/noloops-package/releases/download/v${VERSION}/noloops_0-1-0_arm64.deb"
+DEB_DOWNLOAD_URL="https://github.com/jedsada-n/noloops-package/releases/download/v${VERSION}/noloops_${VERSION//./-}_arm64.deb"
 
 # Colors for output
 RED='\033[0;31m'
