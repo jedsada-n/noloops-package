@@ -6,7 +6,7 @@ Wants=network-online.target
 [Service]
 Type=simple
 EnvironmentFile=-/etc/noloops/.env
-ExecStart=/usr/bin/noloops daemon
+ExecStart=/usr/bin/noloops
 Restart=on-failure
 RestartSec=5
 StartLimitIntervalSec=300
