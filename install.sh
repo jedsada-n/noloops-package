@@ -178,7 +178,7 @@ DEVICE_SECRET=$(echo "$RESPONSE_BODY" | grep -o '"device_secret":"[^"]*"' | cut 
 PROJECT_ID=$(echo "$RESPONSE_BODY" | grep -o '"project_id":"[^"]*"' | cut -d'"' -f4)
 MQTT_BROKER_URL=$(echo "$RESPONSE_BODY" | grep -o '"mqtt_broker_url":"[^"]*"' | cut -d'"' -f4)
 
-if [[ -z "$DEVICE_ID" || -z "$DEVICE_CREDS" ]]; then
+if [[ -z "$DEVICE_ID" || -z "$DEVICE_SECRET" ]]; then
     error "Invalid response from API: missing device credentials"
 fi
 
