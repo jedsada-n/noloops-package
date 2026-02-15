@@ -1,0 +1,11 @@
+#!/bin/bash
+
+dir="$(dirname "$(readlink -f "$0")")"
+control_filename=$dir/src/DEBIAN/control
+
+package=$(awk '/^Package:/ {print $2}' "$control_filename")
+version=$(awk '/^Version:/ {print $2}' "$control_filename")
+arch=$(awk '/^Architecture:/ {print $2}' "$control_filename")
+
+mkdir -p debs/
+dpkg-deb --build src/ debs/${package}_${version//./-}_${arch}.deb

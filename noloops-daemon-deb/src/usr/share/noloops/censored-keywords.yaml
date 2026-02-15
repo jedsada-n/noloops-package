@@ -1,0 +1,14 @@
+commands:
+  - sudo *
+  - rm -rf *
+  - del /f *
+  - format *
+  - dd if=*
+
+outputs:
+  - "*password*"
+  - "*secret*"
+  - "*api_key*"
+  - "*token*"
+  - "*private_key*"
+  - "*Bearer *"

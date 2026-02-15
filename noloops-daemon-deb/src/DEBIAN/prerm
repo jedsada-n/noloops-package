@@ -1,0 +1,3 @@
+#!/bin/bash
+systemctl stop noloops
+systemctl disable noloops

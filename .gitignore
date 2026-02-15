@@ -1,0 +1,7 @@
+# Build outputs
+noloops-daemon-deb/debs/
+noloops-daemon-deb/src/usr/bin/noloops
+
+# Temp files
+*.tmp
+*.bak

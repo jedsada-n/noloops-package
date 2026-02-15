@@ -1,0 +1,16 @@
+[Unit]
+Description=Noloops
+After=network-online.target
+Wants=network-online.target
+
+[Service]
+Type=simple
+EnvironmentFile=/etc/noloops/.env
+ExecStart=/usr/bin/noloops
+Restart=on-failure
+RestartSec=5
+StartLimitIntervalSec=300
+StartLimitBurst=5
+
+[Install]
+WantedBy=multi-user.target
