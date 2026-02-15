@@ -52,7 +52,7 @@ while [[ $# -gt 0 ]]; do
             REGISTER_ARGS+=("$1" "$2")
             shift 2
             ;;
-        --name|--device_generated_id)
+        --name|--device-generated-id)
             REGISTER_ARGS+=("$1" "$2")
             shift 2
             ;;
