@@ -5,8 +5,7 @@ Wants=network-online.target
 
 [Service]
 Type=simple
-Environment="CENSORED_KEYWORDS_PATH=/usr/share/noloops/censored-keywords.yaml"
-EnvironmentFile=/etc/noloops/.env
+EnvironmentFile=-/etc/noloops/.env
 ExecStart=/usr/bin/noloops
 Restart=on-failure
 RestartSec=5

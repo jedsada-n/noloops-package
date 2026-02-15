@@ -1,3 +1,4 @@
 #!/bin/bash
-systemctl stop noloops
-systemctl disable noloops
+if [ "$1" = "remove" ]; then
+    noloops unregister || true
+fi

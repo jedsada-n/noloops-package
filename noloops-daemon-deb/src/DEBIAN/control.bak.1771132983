@@ -1,7 +1,0 @@
-Package: noloops
-Description: Agentic Remote Access for IoT Distributed System
-Version: 0.1.0
-Section: base
-Priority: optional
-Architecture: arm64
-Maintainer: Jedsada Nuanyoi <jedsada@8lanes.co>
